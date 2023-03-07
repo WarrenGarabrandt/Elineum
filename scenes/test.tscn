@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://t4ogx8updq0i"]
+
+[ext_resource type="Script" path="res://scenes/userinput.gd" id="1_5v360"]
+[ext_resource type="PackedScene" uid="uid://pkxnkxujqayd" path="res://scenes/characters/vlad_sword/vlad_sword.tscn" id="1_auftl"]
+
+[node name="test" type="Node2D" node_paths=PackedStringArray("player_char")]
+script = ExtResource("1_5v360")
+player_char = NodePath("vlad_sword")
+
+[node name="vlad_sword" parent="." instance=ExtResource("1_auftl")]
+position = Vector2(529, 300)
